@@ -1,5 +1,5 @@
 
-const SLIDE_COUNT = 18;
+const SLIDE_COUNT = 20;
 
 function createSlides(){
 
@@ -19,7 +19,8 @@ function createSlides(){
 
     var img = document.createElement('img');
 
-    if (i == 16){
+    // Show the gif for Slide #17
+    if (i == 17){
         img.setAttribute("src", "slide" + String(i) + ".gif");
         img.setAttribute("height", "750");
         img.setAttribute("width", "1080px");
@@ -31,7 +32,6 @@ function createSlides(){
     newDiv2.appendChild(img);
     newDiv.appendChild(newDiv2);
     slideshow.appendChild(newDiv);
-
     }
 }
 
